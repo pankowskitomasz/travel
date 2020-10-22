@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pankowskitomasz/yoga_studio.git"
+    "url": "git+https://github.com/pankowskitomasz/travel.git"
   },
   "author": "Tomasz Pankowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pankowskitomasz/yoga_studio/issues"
+    "url": "https://github.com/pankowskitomasz/travel/issues"
   },
-  "homepage": "https://github.com/pankowskitomasz/yoga_studio#readme",
+  "homepage": "https://github.com/pankowskitomasz/travel#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-alpha2",
     "gulp": "^4.0.2",
