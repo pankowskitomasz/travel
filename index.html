@@ -5,36 +5,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Travel | Coming soon!</title>
+    <title>Travel | Your journey starts here!</title>
 </head>
 <body>
-    <header class="container-fluid px-0 shadow shadow-lg border-bottom border-secondary">
-        <nav class="navbar navbar-expand-md nabvar-dark bg-primary">
-            <a href="index.html" class="navbar-brand">
+    <header class="container-fluid px-0 shadow shadow-lg border-bottom border-primary">
+        <nav class="navbar navbar-expand-md nabvar-dark bg-secondary">
+            <a href="index.html" class="navbar-brand mr-3">
                 <img src="img/navbar_logo.png" alt="logo"/>
-                <span class="navbar-text font-logo text-secondary font-weight-bold">
+                <span class="navbar-text font-logo text-primary font-weight-bold">
                     Travel
                 </span>
             </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav text-uppercase w-100">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-primary hover-action">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link text-primary hover-action">
+                            Hotels
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tours.html" class="nav-link text-primary hover-action">
+                            Tours
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="last-minute.html" class="nav-link text-primary hover-action">
+                            Last minute
+                        </a>
+                    </li>
+                    <li class="nav-item ml-0 ml-md-auto">
+                        <a href="contact.html" class="nav-link text-primary hover-action">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link text-primary hover-action">
+                            Sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="comingsoon-s1 align-items-center d-flex text-shadow">
-            <div class="row justify-content-center mx-0 w-100">
-                <div class="col-10 col-sm-6 text-center text-primary">
-                    <h1 class=" display-4 font-weight-bold font-logo">Coming soon :)</h1>
-                    <p class="lead">
-                        Hi, we are not ready yet, however we are staring soon.<br> 
-                        Please visit us again in a while.
-                    </p>
+        <section class="index-s1 container-fluid bg-light p-0">
+            <div class="row mx-0 w-100">
+                <div class="carousel slide p-0" data-ride="carousel" id="index-s1-crs">
+                    <ol class="carousel-indicators">
+                        <li data-target="#index-s1-crs" data-slide-to="0" class="active"></li>
+                        <li data-target="#index-s1-crs" data-slide-to="1"></li>
+                        <li data-target="#index-s1-crs" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg-light active">
+                            <img class="img-fit-top" alt="slide" src="img/index/slide-1.jpg">
+                            <div class="carousel-caption text-shadow">
+                                <div class="display-4 font-weight-bold">Hotel reservations</div>
+                                <a href="hotels.html" class="btn btn-outline-light text-white mx-auto my-3 font-weight-bold">
+                                    Go now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-light">
+                            <img class="img-fit-top" alt="slide" src="img/index/slide-2.jpg">
+                            <div class="carousel-caption text-shadow">
+                                <div class="display-4 font-weight-bold">Plan tour</div>
+                                <a href="tours.html" class="btn btn-outline-light text-white mx-auto my-3 font-weight-bold">
+                                    Go now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-light">
+                            <img class="img-fit-top" alt="slide" src="img/index/slide-3.jpg">
+                            <div class="carousel-caption text-shadow">
+                                <div class="display-4 font-weight-bold">Last minute offers</div>
+                                <a href="last-minute.html" class="btn btn-outline-light text-white mx-auto my-3 font-weight-bold">
+                                    Go now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#index-s1-crs" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#index-s1-crs" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="index-s2 container-fluid d-flex align-items-center jusitfy-content-center minh-25vh py-5">
+            <div class="row mx-0 w-100">
+                <div class="col-11 col-sm-8 col-lg-6 card border border-primary mx-auto p-0">
+                    <div class="card-header bg-white">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a hef="#hotels" 
+                                    class="nav-link text-primary active" 
+                                    data-target="#hotel"
+                                    data-toggle="tab">
+                                    Hotel
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a hef="#" class="nav-link text-primary" 
+                                    class="nav-link text-primary active" 
+                                    data-target="#tour"
+                                    data-toggle="tab">
+                                    Tour
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a hef="#" class="nav-link text-primary" 
+                                    class="nav-link text-primary active" 
+                                    data-target="#lastminute"
+                                    data-toggle="tab">
+                                    Last minute
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body text-primary p-3">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="hotel">
+                                <form class="row">
+                                    <div class="col-12 p-3">
+                                        <label class="pl-2">Destination</label>
+                                        <input type="text" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fdestination"
+                                            placeholder="Search destination...">     
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="pl-2">Check in</label>
+                                        <input type="datetime-local" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fcheckin">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="pl-2">Check out</label>
+                                        <input type="datetime-local" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fcheckout">
+                                    </div>
+                                    <div class="col-12 text-right py-3">
+                                        <input type="reset" class="btn btn-outline-primary" value="Clear">
+                                        <input type="submit" class="btn btn-outline-primary" value="Accept">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="tour">
+                                <form class="row">
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <label class="pl-2">Start point</label>
+                                        <input type="text" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fstartpoint"
+                                            placeholder="Where starts...">  
+                                    </div>
+                                    <div class="col-12 col-sm-6 p-3">
+                                        <label class="pl-2">End point</label>
+                                        <input type="text" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fendpoint"
+                                            placeholder="Where ends...">  
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="pl-2">Start date</label>
+                                        <input type="datetime-local" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fcheckin">   
+                                    </div>
+                                    <div class="col-12 text-right py-3">
+                                        <input type="reset" class="btn btn-outline-primary" value="Clear">
+                                        <input type="submit" class="btn btn-outline-primary" value="Accept">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="lastminute">
+                                <form class="row">
+                                    <div class="col-12 p-3">
+                                        <label class="pl-2">Select type</label>
+                                        <select class="form-control input-bottom-border mb-3"
+                                            name="foffertype"
+                                            placeholder="Offer type"> 
+                                            <option value="all">All</option>
+                                            <option value="hotel">Hotel</option>
+                                            <option value="tour">Tour</option>                                            
+                                        </select>    
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="pl-2">Starts</label>
+                                        <input type="datetime-local" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fcheckin">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="pl-2">Ends</label>
+                                        <input type="datetime-local" 
+                                            class="form-control input-bottom-border mb-3"
+                                            maxlength="100"
+                                            name="fcheckout">
+                                    </div>
+                                    <div class="col-12 text-right py-3">
+                                        <input type="reset" class="btn btn-outline-primary" value="Clear">
+                                        <input type="submit" class="btn btn-outline-primary" value="Accept">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s3 container-fluid p-5 minh-25vh bg-light-green">
+            <div class="row mx-0 w-100">
+                <div class="col-12 py-3">
+                    <h3 class="display-6 text-center text-primary font-logo">
+                        Most popular destinations
+                    </h3>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3">
+                    <div class="card shadow border-primary">
+                        <img class="card-img rounded-0" alt="paris" src="img/destinations/paris.jpg">
+                        <div class="card-footer text-center bg-primary text-white font-weight-bold">
+                            Paris                            
+                        </div>
+                        <a href="tours.html?tour=paris" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3">
+                    <div class="card shadow border-primary">
+                        <img class="card-img rounded-0" alt="vienna" src="img/destinations/vienna.jpg">
+                        <div class="card-footer text-center bg-primary text-white font-weight-bold">
+                            Vienna                            
+                        </div>
+                        <a href="tours.html?tour=vienna" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3">
+                    <div class="card shadow border-primary">
+                        <img class="card-img rounded-0" alt="madrid" src="img/destinations/madrid.jpg">
+                        <div class="card-footer text-center bg-primary text-white font-weight-bold">
+                            Madrid                            
+                        </div>
+                        <a href="tours.html?tour=madrid" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s4 container-fluid p-5 minh-50vh d-flex align-items-center jusitfy-content-center">
+            <div class="row mx-0 w-100">
+                <div class="col-12 py-3">
+                    <h3 class="display-6 text-center text-primary font-logo">
+                        Country Tour
+                    </h3>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card border-0 my-3">
+                    <img class="card-img-top" alt="usa" src="img/tours/usa.jpg">
+                    <div class="card-body px-2">
+                        <div class="w-100 mb-3">
+                            <span class="initialism text-dark mr-2 text-silver">
+                                From:
+                            </span>
+                            <span class="text-primary h5">$ 1300</span>
+                            <a href="tours.html?tour=usa" class="btn btn-sm btn-outline-primary float-right">
+                                Explore
+                            </a>
+                        </div>
+                        <div class="w-100">
+                            <p class="small">
+                                Four days long tour along west coast of USA. Price
+                                includes three nights in three-star hotels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer border-top-0 border-bottom border-silver bg-white">
+                        <div class="text-silver font-weight-bold">
+                            <span class="lead float-left">
+                                USA                                  
+                            </span>
+                            <span class="small float-right mt-2">
+                                West Coast Tour                                  
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card border-0 my-3">
+                    <img class="card-img-top" alt="italy" src="img/tours/italy.jpg">
+                    <div class="card-body px-2">
+                        <div class="w-100 mb-3">
+                            <span class="initialism text-dark mr-2 text-silver">
+                                From:
+                            </span>
+                            <span class="text-primary h5">$ 2100</span>
+                            <a href="tours.html?tour=italy" class="btn btn-sm btn-outline-primary float-right">
+                                Explore
+                            </a>
+                        </div>
+                        <div class="w-100">
+                            <p class="small">
+                                Amazing tour around central and north Italy. Discover
+                                incredible places and taste famous Italian food. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer border-top-0 border-bottom border-silver bg-white">
+                        <div class="text-silver font-weight-bold">
+                            <span class="lead float-left">
+                                Italy                                  
+                            </span>
+                            <span class="small float-right mt-2">
+                                Central &amp; North Italy                                   
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 card border-0 my-3">
+                    <img class="card-img-top" alt="portugal" src="img/tours/portugal.jpg">
+                    <div class="card-body px-2">
+                        <div class="w-100 mb-3">
+                            <span class="initialism text-dark mr-2 text-silver">
+                                From:
+                            </span>
+                            <span class="text-primary h5">$ 1900</span>
+                            <a href="tours.html?tour=portugal" class="btn btn-sm btn-outline-primary float-right">
+                                Explore
+                            </a>
+                        </div>
+                        <div class="w-100">
+                            <p class="small">
+                                Tour around one of the most fascinating and inconspicuous city 
+                                in Europe.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer border-top-0 border-bottom border-silver bg-white">
+                        <div class="text-silver font-weight-bold">
+                            <span class="lead float-left">
+                                Portugal                                  
+                            </span>
+                            <span class="small float-right mt-2">
+                                Lisbon Tour                                   
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-s5 container-fluid bg-light-green minh-50vh p-0">
+            <div class="row mx-0 w-100">
+                <div class="col-12 col-md-6 minh-50vh index-sub-s1">              
+                </div>
+                <div class="col-12 col-md-6 minh-50vh d-flex align-items-center">   
+                    <div class="text-primary w-100 text-center">
+                        <h3 class="font-weight-bold font-logo">Contact us today!</h3>          
+                        <ul class="list-unstyled">
+                            <li>21, Ford Street</li>
+                            <li>Califonia, USA</li>
+                            <li>Call: +(01) 103 144 432</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid bg-primary font-weight-bold text-center text-secondary p-3 border-top border-secondary">
+    <footer class="container-fluid bg-secondary font-weight-bold text-center text-primary p-3 border-top border-primary">
         <small class="my-0">
             Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
-            <a class="text-secondary" href="privacy.html">Privacy policy</a>
+            <a class="text-primary" href="privacy.html">Privacy policy</a>
         </small>
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

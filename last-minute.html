@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Travel | Last minute offers</title>
+</head>
+<body>
+    <header class="container-fluid px-0 shadow shadow-lg border-bottom border-primary">
+        <nav class="navbar navbar-expand-md nabvar-dark bg-secondary">
+            <a href="index.html" class="navbar-brand mr-3">
+                <img src="img/navbar_logo.png" alt="logo"/>
+                <span class="navbar-text font-logo text-primary font-weight-bold">
+                    Travel
+                </span>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav text-uppercase w-100">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-primary hover-action">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotels.html" class="nav-link text-primary hover-action">
+                            Hotels
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tours.html" class="nav-link text-primary hover-action">
+                            Tours
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="last-minute.html" class="nav-link text-primary hover-action">
+                            Last minute
+                        </a>
+                    </li>
+                    <li class="nav-item ml-0 ml-md-auto">
+                        <a href="contact.html" class="nav-link text-primary hover-action">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user.html" class="nav-link text-primary hover-action">
+                            Sign in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="lastminute-s1 container-fluid d-flex align-items-center jusitfy-content-center minh-100vh pt-5 pb-3 bg-light-green">
+            <div class="row mx-0 w-100">
+                <div class="col-11 col-sm-8 col-lg-6 card border border-primary mx-auto p-0">
+                    <div class="card-header bg-primary text-white font-weight-bold">
+                        Search                     
+                    </div>
+                    <div class="card-body row text-primary p-3">
+                        <div class="col-12 p-3">
+                            <label class="pl-2">Select type</label>
+                            <select class="form-control input-bottom-border mb-3"
+                                name="foffertype"
+                                placeholder="Offer type"> 
+                                <option value="all">All</option>
+                                <option value="hotel">Hotel</option>
+                                <option value="tour">Tour</option>                                            
+                            </select>    
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="pl-2">Starts</label>
+                            <input type="datetime-local" 
+                                class="form-control input-bottom-border mb-3"
+                                maxlength="100"
+                                name="fcheckin">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="pl-2">Ends</label>
+                            <input type="datetime-local" 
+                                class="form-control input-bottom-border mb-3"
+                                maxlength="100"
+                                name="fcheckout">
+                        </div>
+                        <div class="col-12 text-right py-3">
+                            <input type="reset" class="btn btn-outline-primary" value="Clear">
+                            <input type="submit" class="btn btn-outline-primary" value="Accept">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lastminute-s2 container-fluid p-5 pt-3 minh-50vh d-flex align-items-center jusitfy-content-center">
+            <div class="row mx-0 w-100">
+                <div class="col-12 py-3 border-bottom border-primary">
+                    <h3 class="lead text-left text-primary font-logo">
+                        Found:
+                    </h3>    
+                </div>
+            </div>
+        </section>
+        <section class="index-s5 container-fluid bg-light-green minh-50vh p-0">
+            <div class="row mx-0 w-100">
+                <div class="col-12 col-md-6 minh-50vh index-sub-s1">              
+                </div>
+                <div class="col-12 col-md-6 minh-50vh d-flex align-items-center">   
+                    <div class="text-primary w-100 text-center">
+                        <h3 class="font-weight-bold font-logo">Contact us today!</h3>          
+                        <ul class="list-unstyled">
+                            <li>21, Ford Street</li>
+                            <li>Califonia, USA</li>
+                            <li>Call: +(01) 103 144 432</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bg-secondary font-weight-bold text-center text-primary p-3 border-top border-primary">
+        <small class="my-0">
+            Copyright &copy; 2020 Tomasz Pankowski. All rights reserved.
+            <a class="text-primary" href="privacy.html">Privacy policy</a>
+        </small>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -14,16 +14,12 @@
         @extend %bg-blend;
     }
 }
-.error{
+.contact{
     &-s1{
         @extend %bg-blend;
     }
 }
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
+.error{
     &-s1{
         @extend %bg-blend;
     }
@@ -36,6 +32,81 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.hotels{
+    &-s1{
+        background-attachment: scroll;
+    }
+}
+.hover{
+    &-action{
+        &:hover{
+            filter: grayscale(1);
+            text-decoration: underline;
+        }
+    }
+}
+.img{
+    &-fit{
+        &-top{
+            @include calc-param(max-height, $section__min-height, $header__height);
+            @include calc-param(min-height, $section__min-height, $header__height);
+            mix-blend-mode: $bg__blend--type;
+            object-fit: cover;
+            width: 100%;        
+        }
+    }
+}
+.index{
+    &-s1{
+        @extend %bg-blend;
+    }
+    &-s2{
+        @include background-blend($bg__blend--type, $color__white);
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: right bottom;
+    }
+    &-sub{
+        &-s1{
+            background-attachment: scroll;
+        }
+    }
+}
+.input{
+    &-bottom{
+        &-border{
+            &:focus{
+                box-shadow: none!important;
+            }
+            border: none !important;
+            border-bottom: $input__bottom-border !important;
+            border-radius: 0px!important;
+        }
+    }
+}
+.label{
+    box-shadow: $label__shadow;
+    opacity: $label__opacity;
+}
+.minh{
+    &-25vh{
+        min-height: 25vh;
+    }
+    &-50vh{
+        min-height: 50vh;        
+    }
+    &-75vh{
+        min-height: 75vh;        
+    }
+    &-100vh{
+        min-height: 100vh;        
+    }
+}
+.nav{
+    &-item{
+        cursor: pointer;
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -43,9 +114,30 @@
         }
     }
 }
-
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
     }
+}
+.tours{
+    &-s1{
+        background-attachment: scroll;
+    }
+}
+.user{
+    &-s1{
+        background-attachment: scroll;
+    }
+}
+body{
+    min-width: $body__min-width;
 }
