@@ -9,6 +9,12 @@
     @include calc-param(min-height, $section__min-height, $header__height);
 }
 
+.bg{
+    &-overlay{
+        background-blend-mode: overlay;
+    }
+}
+
 .comingsoon{
     &-s1{
         @extend %bg-blend;
@@ -69,6 +75,7 @@
     &-sub{
         &-s1{
             background-attachment: scroll;
+            background-position: center;
         }
     }
 }
@@ -140,4 +147,18 @@
 }
 body{
     min-width: $body__min-width;
+}
+
+@media all and (min-width: 767px){
+    .img{
+        &-fit{
+            &-top{
+                max-height: 500px;
+                min-height: 50vh;
+                mix-blend-mode: $bg__blend--type;
+                object-fit: cover;
+                width: 100%;        
+            }
+        }
+    }
 }
